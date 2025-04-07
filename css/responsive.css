@@ -1,0 +1,252 @@
+@charset "UTF-8";
+@media screen and (max-width: 1100px) {
+  body {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .pc_only {
+    display: none;
+  }
+
+  .sp_only {
+    display: block;
+  }
+
+  /* 見出し（iphone） */
+  .title {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+  .ttl_sec .en{
+    font-size: 3.0rem;
+  }
+  /* レイアウト （iphone）*/
+  .section {
+    padding: 60px 0;
+  }
+
+  .inner {
+    padding: 0 20px;
+  }
+
+  /* 装飾（iphone） */
+	.deco_1{
+		width: 90px;
+	  left: 30px;
+		bottom: -80px;
+	}
+
+	.deco_2{
+		width: 120px;
+		right: 10px;
+		bottom: -90px;
+	}
+
+	.deco_3{
+		width: 90px;
+		left:0;
+	}
+
+	.deco_4{
+		width: 90px;
+		right: 0;
+		top: -200px;
+	}
+
+  /*  header（iphone） */
+  .header_inner {
+    padding: 0 20px;
+  }
+
+  .header_title {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+
+  .header_subtitle {
+    font-size: 18px;
+  }
+
+  /* グローバルナビ（iphone）*/
+  .gnav_inner {
+    padding: 15px;
+  }
+
+	.gnav_list{
+		justify-content: space-around;
+		padding: 0;
+	}
+
+  .gnav_logo {
+    font-size: 15px;
+  }
+
+  .gnav_item:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  .gnav_item a {
+    font-size: 16px;
+  }
+
+  .gnav_item a:after {
+    display: none;
+  }
+
+  /* Works（iphone） */
+  .ttl_work{
+    font-size: 2.0rem;
+  }
+  .works_list {
+    justify-content: space-between;
+  }
+  .works_item {
+    flex: 0 0 48%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .works_name{
+    font-size: 1.5rem;
+  }
+  .tantou_work{
+    font-size: 1.2rem;
+  }
+  /* Skill（iphone） */
+  .skill_list {
+    display: block;
+    margin-bottom: 0;
+  }
+
+  .skill_item {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+
+  .skill_item:last-child {
+    margin-bottom: 0;
+  }
+
+  /* About（iphone） */
+  .profile {
+    display: block;
+  }
+  .profile_img {
+    width: 150px;
+    margin: 0 auto 50px;
+  }
+
+  .profile_body p:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  /* フッター（iphone） */
+  .footer {
+    padding: 20px;
+  }
+  /*--------------------------------
+   ページトップ
+  ---------------------------------*/
+  .icons{
+  	font-family: 'Courgette', cursive;
+    font-weight: bold;
+  	font-size: 1.4rem;
+  	color: #2e2e2e;
+  }
+
+  /*--------------------------------
+   下層：Worksページ
+  ---------------------------------*/
+  .work{
+    padding-bottom: 50px;
+  }
+  .work_title{
+  	font-size: 2.5rem;
+  }
+  .work_sub_title{
+  	font-size: 1.6rem;
+  	margin-top: 30px;
+  }
+  .work_top p{
+  	margin-top: 15px;
+  }
+  .wrap_about_work{
+  	display: block;
+  	margin-top: 50px;
+  }
+  .img_about_work{
+  	width: 100%;
+  }
+  .about_work{
+  	width: 100%;
+    margin-top: 50px;
+  }
+  .item_about_work{
+  	margin-top: 30px;
+  }
+  .ttl_item_about_work{
+  	font-size: 1.6rem;
+  	width: 145px;
+  }
+  .item_about_work p{
+  	margin-top: 7px;
+  }
+  .inner_sub_about_work{
+  	display: block;
+  	margin-top: 10px;
+  }
+  .item_ba{
+  	width: 100%;
+  }
+  .item_ba:nth-child(2){
+    margin-top: 30px;
+  }
+  .ttl_sub_img{
+    font-size: 1.6rem;
+  }
+  .btn_work a:link, .btn_work a:visited{
+    padding: 10px 20px;
+  	font-size: 1.6rem;
+  }
+
+  .btn_work a:hover, .btn_work a:active{
+  	opacity: .6;
+  }
+  .return_work{
+  	margin-top: 90px;
+  }
+  .sub_coment{
+  	font-size: 1.6rem;
+  }
+  .sub_coment::before{
+  	font-size: 1.0rem;
+  }
+  /*//////////////////////////banner_page ////////////////////////////////*/
+  .banner_page .img_about_work{
+  	margin: 0 auto;
+  }
+  /*//////////////////////////個別ページ ////////////////////////////////*/
+  /* maruko_page */
+  .maruko_page .img_work_top{
+  	margin-top: 30px;
+  }
+  /* mangetudo */
+  .sub_about_mangetudo{
+  	display: block;
+  }
+  .sp_about_mangetudo{
+  	width: 100%;
+  }
+  .kisetu_mangetudo{
+  	width: 100%;
+    margin-top: 70px;
+  }
+  .inner_kisetu_mangetudo{
+  	display: block;
+  }
+  .kisetu_mangetudo .item{
+  	width: 100%;
+    margin-top: 30px;
+  }
+
+}

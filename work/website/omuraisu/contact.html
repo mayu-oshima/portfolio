@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>お問い合わせ｜オムライスの森</title>
+	<meta name="keywords" content="オムライスの森,お問い合わせ,栃木県,壬生町,カフェ">
+	<meta name="description" content="「オムライスの森」へのお問い合わせ・ご意見については、こちらより問い合わせ下さい。">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/5cb8774097.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="responsive.css">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&family=Noto+Serif+JP:wght@700&display=swap" rel="stylesheet">
+	<meta name="google-site-verification" content="t78xDGdL1Mdrddi0kSt5q-io6BcWZ6ShOGKgNOGtAJ8" />
+	<script src="jquery-3.6.0.min.js"></script>
+	<!--ヘッダーナビのscript-->
+	<script type="text/javascript">
+		$(function(){
+			$('.menu_btn').click(function(){
+			 $('body').toggleClass('open_nav');
+			});
+		});
+		</script>
+<script src="jquery.validate.min.js"></script>
+<script>
+	$(function(){
+		$("#form").validate({
+		// 入力のルール
+		rules: {
+		// 必須項目
+		"name_sei": {
+		required: true
+		},
+		"name_mei" : {
+		required: true
+		},
+		"email" : {
+		required: true
+		},
+		"message" : {
+		required: true
+		},
+		},
+		// エラーメッセージ
+		messages:{
+		"name_sei" : {
+		required : "<span class='warning'>・お名前(姓)の入力を行ってください。</span><br>"
+		},
+		"name_mei" : {
+		required : "<span class='warning'>・お名前(名)の入力を行ってください。</span><br>"
+		},
+		"email" : {
+		required: "<span class='warning'>・メールアドレスの入力を行ってください。</span><br>"
+		},
+		"message" : {
+		required: "<span class='warning'>・お問い合わせ内容の入力を行ってください。</span><br>"
+		},
+		},
+		// エラーメッセージの場所を指定
+		// 第一引数errorは追加しようとしているエラーメッセージの内容。
+		// 第二引数elementはエラーが発生したオブジェクトが設定されます。
+		errorPlacement: function(error, element){
+		error.insertBefore("#contact_form");
+		}
+		});
+	});
+</script>
+</head>
+
+
+
+<body>
+
+<!--ヘッダー-->
+<header>
+	<div class="wrap_header">
+		<a href="index.html"><img class="logo_header" src="images/logo_brown.png" alt="オムライスの森"></a>
+
+		<div class="menu_btn nav_toggle">
+    <div>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    </div>
+
+		<nav class="header_nav">
+			<ul>
+				<li>
+					<a href="about.html" class="about_header_nav">
+						<span class="en">About</span><span class="ja">-店舗案内-</span>
+					</a>
+				</li>
+				<li>
+					<a href="menu.html" class="menu_header_nav">
+						<span class="en">Menu</span><span class="ja">-メニュー-</span>
+					</a>
+				</li>
+				<li>
+					<a href="contact.html" class="contact_header_nav">
+						<span class="en">Contact</span><span class="ja">-お問い合わせ-</span>
+					</a>
+				</li>
+				<li>
+					<a href="access.html" class="access_header_nav">
+						<span class="en">Access</span><span class="ja">-アクセス-</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</header>
+
+
+<!--メイン-->
+<main>
+	<div class="title">
+		<div class="title_item">
+			<h1>Contact</h1>
+			<p class="yomi">お問い合わせ</p>
+		</div>
+	</div>
+
+	<div class="main_wrap_contact">
+		<h2>お問い合わせフォーム</h2>
+
+		<div class="form_wrap">
+
+			<p>
+				オムライスの森へのお問合せは、こちらのフォームをご利用ください。<br>
+				必要事項をご記入の上、「送信」を押してください。<br class="br_sp"><span class="hissu"></span>は必須項目です。<br>
+				お預かりした大切なお客様情報は、お問い合わせへの返信などに使用する以外の目的には一切使用いたしません。
+			</p>
+
+			<form medhod="POST" action="" id="form">
+				<div id="contact_form">
+
+					<div class="form_item">
+						<label for="name_sei" class="koumoku_form">お名前<span class="hissu"></span></label>
+						<div class="mei">
+							<input type="text" name="name_sei" placeholder="姓" id="name_sei" class="name">
+							<input type="text" name="name_mei" placeholder="名" class="name">
+						</div>
+					</div>
+
+					<div class="form_item">
+						<label for="kana_sei" class="koumoku_form">フリガナ</label>
+						<div>
+							<input type="text" name="kana_sei" placeholder="セイ" id="kana_sei" class="name">
+							<input type="text" name="kana_mei" placeholder="メイ" class="name">
+						</div>
+					</div>
+
+					<div class="form_item">
+						<label for="email" class="koumoku_form">メールアドレス<span class="hissu"></span></label>
+						<div>
+							<input type="text" name="email" id="email" placeholder="ご連絡可能なメールアドレスを入力してください">
+						</div>
+					</div>
+
+					<div class="form_item">
+						<label for="tel1" class="koumoku_form">電話番号</label>
+						<div>
+							<input type="text" name="tel1" id="tel1" class="tel" placeholder="000">
+							<span class="tel_haihun">-</span>
+							<input type="text" name="tel2" class="tel" placeholder="0000">
+							<span class="tel_haihun">-</span>
+							<input type="text" name="tel3" class="tel" placeholder="0000">
+						</div>
+					</div>
+
+				  <div class="form_item">
+				    <label class="koumoku_form">当カフェをお知りになったきっかけは？</label>
+						<div>
+					    <label><input type="checkbox" name="how" value="friends">知り合いの紹介で</label>
+					    <label><input type="checkbox" name="how" value="magazine">雑誌・webサイトで見て</label><br class="br_sp">
+							<label><input type="checkbox" name="how" value="other">その他</label>
+						</div>
+				  </div>
+
+					<div class="form_item">
+				    <label class="koumoku_form">お問い合わせの内容<span class="hissu"></span></label>
+						<div>
+					    <textarea name="message" placeholder="ご質問、お問い合わせを入力してください"></textarea>
+						</div>
+				  </div>
+
+					<div id="wrap_submit">
+						<input type="submit" name="submit" value="送信" id=btn_submit>
+					</div>
+
+				</div>
+			</form>
+		</div>
+	</div>
+</main>
+
+
+<!--フッター-->
+<footer>
+	<div class=" footer_wrap">
+		<div id="wrap_logo_footer">
+			<img class="logo_footer" src="images/logo_brown.png" alt="オムライスの森">
+		</div>
+
+		<div class="footer_address">
+			<address>
+				オムライスの森<br>
+				〒321-0201<br>
+				栃木県下都賀郡壬生町201-1<br>
+				TEL:028-554-9001<br>
+				営業時間：11:00〜21:00（L.O. 20:00）<br>
+				定休日:水曜日
+			</address>
+		</div>
+
+		<div class="footer_nav">
+			<nav>
+				<ul>
+					<li><a href="index.html">トップ</a></li>
+					<li><a href="about.html">店舗案内</a></li>
+					<li><a href="menu.html">メニュー</a></li>
+					<li><a href="contact.html">お問い合わせ<a></li>
+					<li><a href="access.html">アクセス</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+ 	<p class="copyright">©2021 Omuraisunomori. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

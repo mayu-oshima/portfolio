@@ -1,0 +1,345 @@
+/* pc 用 */
+@charset "UTF-8";
+@media screen and (min-width: 1200px){
+/* //////////////////////////////共通 ////////////////////////////////////*/
+body{
+  font-size: 1.6rem;
+}
+.l_container{
+  width: 1130px;
+  margin: 0 auto;
+}
+.sp_only{
+  display: none;
+}
+.pc_only{
+  display: block;
+}
+/* //////////////header////////////// */
+header{
+  position: relative;
+}
+/* wrap_title */
+header .wrap_title{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px 0;
+  width: 1130px;
+  margin: 0 auto;
+}
+header .title_header{
+  width: 40%;
+}
+header .title_header .inner{
+  padding: 0;
+}
+header .logo{
+  width: 290px;
+}
+.humburger {
+  display: none;
+}
+.info_header{
+  width: 40%;
+}
+.tel_header{
+  padding: 10px;
+}
+.tel_header p span {
+  margin-left: 10px;
+  font-size: 2.0rem;
+}
+.access_header {
+  margin: 0;
+  width: 100%;
+}
+.access_header p {
+  font-size: 1.6rem;
+}
+/* nav_header */
+.page_guide .nav_header, .page_intro .nav_header, .page_access .nav_header{
+  display: block;
+}
+.nav_header{
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+}
+.nav_header ul{
+  width: 754px;
+  justify-content: center;
+  background-color: white;
+  border-radius: 10px;
+}
+.nav_header ul li{
+  width: 25%;
+  border-left: 1px solid #e2e2e2;
+  overflow: hidden;
+}
+/* pankuzu */
+.pankuzu{
+  margin-bottom: 50px;
+}
+.pankuzu ul li{
+  margin-right: 6px;
+}
+/* /////////////main////////////// */
+main{
+  padding: 80px 0 130px;
+}
+.bg_content{
+  padding: 50px;
+}
+.page_title{
+  font-size: 3.6rem;
+}
+.page_title::after{
+  width: 100px;
+  height: 5px;
+}
+.ttl_sec{
+  font-size: 2.7rem;
+  margin-bottom: 50px;
+}
+.pagetop p{
+  padding: 17px;
+  font-size: 1.8rem
+}
+/*////////// footer//////////////*/
+/* nav_footer */
+.footer_top{
+  font-size: 1.4rem;
+}
+.inner_footer_top{
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.nav_footer{
+  width: 40%;
+}
+.nav_footer li{
+  width: 48%;
+  margin-bottom: 20px;
+}
+/* info_footer */
+.info_footer{
+  width: 55%;
+  padding-left: 0;
+  display: flex;
+}
+.logo_footer{
+  width: 250px;
+  margin-bottom: 0;
+  margin-right: 10%;
+}
+/* ///////////////////////page_top//////////////////////////// */
+.slick-next{
+  right: 60px!important;
+}
+.slick-next::before{
+  font-size: 5.0rem!important;
+}
+/* //wrap_time_news// */
+.wrap_time_news{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin-bottom: 120px;
+}
+
+/* wrap1 */
+.wrap1{
+  margin: 0;
+  width: 40%;
+}
+.time{
+  padding: 42px!important;
+}
+.time .ttl_sec{
+  margin-bottom: 42px!important;
+}
+.wrap_guidance{
+  display: flex;
+  justify-content: space-between;
+}
+.guidance{
+  width: 100%;
+  margin-bottom: 0;
+}
+.guidance ul li {
+    font-size: 2.2rem;
+}
+.guidance ul li a::before{
+  left: 50px;
+}
+/* news */
+.news{
+  margin: 0;
+  width: 55%;
+}
+.list_news{
+  height: 500px;
+}
+/* strengths */
+.strengths{
+  margin: 0 auto;
+}
+.innner_strengths{
+  display: flex;
+  justify-content: space-between;
+}
+.innner_strengths > div{
+  width: 49%;
+}
+
+/* treatment */
+.treatment{
+  margin-top: 120px;
+}
+.treatment .menu_treatment ul{
+  display: flex;
+  flex-wrap: wrap;
+}
+.treatment .menu_treatment ul li{
+  width: 23.5%;
+  margin-right: 2%;
+  margin-top: 40px;
+}
+.treatment .menu_treatment ul:first-child li:nth-child(-n+4){
+  margin-top: 0;
+}
+.treatment .menu_treatment ul li:nth-child(4n){
+  margin-right: 0px;
+}
+.treatment .menu_treatment ul li a{
+  display: block;
+}
+.treatment .menu_treatment ul li a img{
+  width: 100%;
+}
+.treatment .menu_treatment ul li p{
+  width: 100%;
+  padding: 20px 0;
+}
+/*////////////////////// page_guide ///////////////////////////////*/
+/* guide_nyuin */
+.guide_nyuin ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.guide_nyuin ul li{
+  width: 48%;
+  margin-top: 40px;
+}
+.guide_nyuin ul li:nth-child(-n+2){
+  margin-top: 0;
+}
+/* /////////////////////////page_intro///////////////////////// */
+section{
+  margin-bottom: 120px;
+}
+.about_byoinsyokai .sentence{
+  display: flex;
+  justify-content: space-between;
+}
+.about_byoinsyokai .sentence p{
+  width: 57%;
+}
+.about_byoinsyokai .sentence figure{
+  width: 40%;
+}
+.byoinsyokai .sentence{
+  margin-bottom: 70px;
+}
+.byoinsyokai .sentence p{
+  margin-bottom: 50px;
+}
+.wrap_nyuin_gairai{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 120px;
+}
+.page_intro .content{
+  width: 49%;
+}
+.page_intro .nyuin{
+  margin-top: 0px;
+}
+.page_intro .gairai{
+  margin-top: 0px;
+}
+.page_intro .content p{
+  margin-bottom: 30px;
+}
+.page_intro .content p span{
+  margin: 30px 0
+}
+.page_intro .content ul{
+  margin-bottom: 30px;
+}
+.page_intro .content ul li{
+  margin-bottom: 15px;
+}
+/* gaiyou */
+.page_intro .gaiyou{
+  margin-top: 120px;
+}
+.page_intro .gaiyou table tr{
+  border-bottom: 1px solid #e2e2e2;
+}
+.page_intro .gaiyou table th{
+  display: table-cell;
+  width: 10%;
+  padding: 0px;
+  text-align: center;
+  vertical-align: middle;
+}
+.page_intro .gaiyou table td{
+  display: table-cell;
+  width: 90%;
+  padding: 20px;
+}
+
+/* /////////////////////////page_access/////////////////////////// */
+.page_access .wrap{
+  padding: 30px;
+}
+.inner_kotuguide{
+  display: flex;
+  justify-content: space-between;
+}
+.inner_kotuguide > div{
+  width: 30%;
+  margin-bottom: 0;
+}
+.page_access .wrap > div{
+  margin-bottom: 30px;
+}
+.page_access .wrap > div:last-child{
+  margin-bottom: 0;
+}
+.page_access .wrap h4{
+  margin-bottom: 20px;
+  font-size: 2.2rem;
+}
+.page_access .wrap > p{
+  margin-bottom: 30px;
+}
+.page_access .wrap > ul{
+  margin-bottom: 30px;
+  margin-left: 1.4em;
+}
+.tel_access{
+  font-size: 1.8rem;
+}
+
+
+
+}
