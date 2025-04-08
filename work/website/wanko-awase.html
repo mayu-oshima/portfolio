@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+  <meta name="description" content="大島繭のポートフォリオサイトです" />
+  <title>Mayu Oshima ポートフォリオ</title>
+  <link href="../../css/reset.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="../../css/style.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="../../css/responsive.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/5cb8774097.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- gnav -->
+    <nav class="gnav">
+      <div class="gnav_inner">
+        <ul class="gnav_list">
+          <li class="gnav_item"><a href="../../index.html">Home</a></li>
+          <li class="gnav_item"><a href="../../index.html#works">Works</a></li>
+          <li class="gnav_item"><a href="../../index.html#skill">Skill</a></li>
+          <li class="gnav_item"><a href="../../index.html#about">About</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- /gnav -->
+
+    <main>
+
+      <div class="work inner">
+        <div class="work_top">
+          <h2 class="work_title">Webサイト</h2>
+          <h3 class="work_sub_title">わんこあわせ</h3>
+          <p>
+            カードをめくって同じ犬の写真を合わせる神経衰弱ゲームアプリです。
+          </p>
+          <div class="btn_work">
+            <a href="https://wanko-awase.vercel.app/" target="_blank" rel="noopener">ゲームアプリへ</a>
+            <a class="code" href="https://github.com/mayu-oshima/wanko-awase/" target="_blank" rel="noopener">ソースコードはこちら</a>
+          </div>
+        </div>
+
+        <div class="wrap_about_work">
+          <div class="img_about_work">
+            <img src="images/wanko-awase.png" alt="">
+          </div>
+          <div class="about_work">
+            <div class="item_about_work">
+              <h4 class="ttl_item_about_work">制作ポイント</h4>
+              <div>
+                <p>React＋TypeScriptで記憶カードゲームを制作しました。以下の点を特に工夫しています。</p>
+                <div class="content_item_about_work">
+                  <h3 class="ttl_content_item_about_work">状態管理の整理</h3>
+                  <p>
+                    カードの状態、レベル、タイマーなど、役割ごとに useState を分けて管理しています。<br>
+                    関連するstateはオブジェクトとして一つにまとめることで読みやすく保守性の高い構成にしました。    
+                  </p>
+                </div>
+                <div class="content_item_about_work">
+                  <h3 class="ttl_content_item_about_work">タイマーの精度向上</h3>
+                  <p>
+                    0.01秒単位のタイマーを setInterval で実装。浮動小数点誤差を抑えるため Math.round と .toFixed(2) を併用して安定した表示を実現しました。
+                  </p>
+                </div>
+                <div class="content_item_about_work">
+                  <h3 class="ttl_content_item_about_work">ゲーム性とUXへの配慮</h3>
+                  <p>
+                    難易度によってカード数が変わり、プレイの幅が広がる設計。操作のタイミングやアニメーションも自然になるよう微調整しています。
+                  </p>
+                </div>
+                <div class="content_item_about_work">
+                  <h3 class="ttl_content_item_about_work">styled-componentsで動的な見た目に</h3>
+                  <p>
+                    カードをひっくり返したり、全て正解した時などの状態に応じて見た目を切り替え、ReactのPropsとスタイルが連動するよう工夫しました。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="item_about_work">
+              <h4 class="ttl_item_about_work">担当範囲</h4>
+              <p>コーディング, デザイン</p>
+            </div>
+            <div class="item_about_work">
+              <h4 class="ttl_item_about_work">使用言語・フレームワーク等</h4>
+              <p>React, JavaScript / TypeScript, HTML, CSS, Photoshop</p>
+            </div>
+            <div class="item_about_work">
+              <h4 class="ttl_item_about_work">対応機種</h4>
+              <p>PC</p>
+            </div>
+            <div class="btn_work">
+              <a href="https://wanko-awase.vercel.app/" target="_blank" rel="noopener">ゲームアプリへ</a>
+              <a class="code" href="https://github.com/mayu-oshima/wanko-awase/" target="_blank" rel="noopener">ソースコードはこちら</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn_work return_work">
+          <a href="../../index.html#works">Works一覧へ戻る</a>
+        </div>
+
+      </div>
+
+      <!-- background -->
+      <div class="bg"></div>
+      <!-- /background -->
+
+      <!-- toTop -->
+      <div class="page_top" id="js_page_top">
+        <span class="icons"><i class="fas fa-chevron-up"></i>page top</span>
+      </div>
+      <!-- /toTop -->
+
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="copyright">&copy;Mayu Oshima</div>
+    </footer>
+    <!-- /footer -->
+
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type='text/javascript' src="../../js/script.js"></script>
+</body>
+</html>
