@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
-  <meta name="description" content="ポートフォリオサイトです" />
+  <meta name="description" content="大島繭のポートフォリオサイトです" />
   <title>Mayu Oshima ポートフォリオ</title>
   <link href="css/reset.css" media="all" rel="stylesheet" type="text/css" />
   <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
@@ -33,11 +33,17 @@
       <!-- header -->
       <header class="header">
         <div class="header_inner">
-          <div class="deco_1">
-            <img src="img/deco/pengin.png" alt="">
-          </div>
-          <div class="deco_2">
-            <img src="img/deco/panda_baton.png" alt="">
+          <div class="ttl_warp">
+            <div class="deco_1">
+              <img src="img/deco/pengin.png" alt="">
+            </div>
+            <p class="ttl">
+              Mayu Oshima<br>
+              portfolio
+            </p>
+            <div class="deco_2">
+              <img src="img/deco/panda_baton.png" alt="">
+            </div>  
           </div>
         </div>
         <img class="musical1 pc_only" src="img/deco/musical1.png" alt="">
@@ -49,7 +55,8 @@
       <div class="greeting">
         <p>
           ポートフォリオサイトをご覧いただき<br class="sp_only">ありがとうございます。<br>
-          「作った物で人を笑顔にしたい」という気持ちで、<br>ご依頼いただいた方の想いを汲み取って<br>デザインという目に見える形で表現したり、<br>見た人が心が躍るデザインを<br class="sp_only">制作したいと思っております。
+          フロントエンドエンジニアとして日々学びを重ねながら、<br>
+          丁寧にコツコツと制作に取り組んでいます。
         </p>
       </div>
       <!-- /greeting -->
@@ -60,33 +67,34 @@
           <h2 class="ttl_sec" class="ttl_sec"><span class="en">Works</span><span class="ja">制作物</span></h2>
 
           <div class="wrap_works_list">
-            <h3 class="ttl_work">Webサイト</h3>
+            <h3 class="ttl_work">コーディング</h3>
             <div class="works_list">
-              <a class="works_item" href="work/website/kobayasi.html">
-                <p class="works_img"><img src="img/index/list_work/kobayasi.jpg" alt="" /></p>
-                <p class="works_name">総合病院「小林病院」(架空)</p>
-                <p class="tantou_work">デザイン/コーディング</p>
-              </a>
               <a class="works_item" href="work/website/omuraisu.html">
                 <p class="works_img"><img src="img/index/list_work/omuraisu.jpg" alt="" /></p>
                 <p class="works_name">カフェ「オムライスの森」(架空)</p>
-                <p class="tantou_work">デザイン/コーディング</p>
+                <p class="tantou_work">コーディング/デザイン</p>
               </a>
               <a class="works_item" href="work/website/sala.html">
                 <p class="works_img"><img src="img/index/list_work/sala.jpg" alt="" /></p>
                 <p class="works_name">美容院「SALA」(架空)</p>
-                <p class="tantou_work">デザイン/コーディング</p>
+                <p class="tantou_work">コーディング/デザイン</p>
               </a>
+              <a class="works_item" href="work/website/kobayasi.html">
+                <p class="works_img"><img src="img/index/list_work/kobayasi.jpg" alt="" /></p>
+                <p class="works_name">総合病院「小林病院」(架空)</p>
+                <p class="tantou_work">コーディング/デザイン</p>
+              </a>
+            </div>
+          </div>
+
+          <div class="wrap_works_list">
+            <h3 class="ttl_work">デザイン</h3>
+            <div class="works_list">
               <a class="works_item" href="work/website/mangetudo.html">
                 <p class="works_img"><img src="img/index/list_work/mangetudo_pc.jpg" alt="" /></p>
                 <p class="works_name">和菓子屋「満月堂」(架空)</p>
                 <p class="tantou_work">デザイン</p>
               </a>
-            </div>
-          </div>
-          <div class="wrap_works_list">
-            <h3 class="ttl_work">バナー</h3>
-            <div class="works_list">
               <a class="works_item" href="work/banner/fashion.html">
                 <p class="works_img"><img src="img/index/list_work/fashion.jpg" alt="" /></p>
                 <p class="works_name">ファッション通販サイト「FASHION SHOP」(架空)</p>
@@ -107,11 +115,6 @@
                 <p class="works_name">「白石ピアノ教室」(架空)</p>
                 <p class="tantou_work">デザイン</p>
               </a>
-            </div>
-          </div>
-          <div class="wrap_works_list">
-            <h3 class="ttl_work">グラフィックデザイン</h3>
-            <div class="works_list">
               <a class="works_item" href="work/graphic/hanabi.html">
                 <p class="works_img"><img src="img/index/list_work/hanabi.jpg" alt="" /></p>
                 <p class="works_name">宇都宮花火大会のポスター(架空)</p>
@@ -124,7 +127,6 @@
               </a>
             </div>
           </div>
-
         </div>
       </section>
       <!-- /works -->
@@ -139,37 +141,48 @@
             </div>
 
             <div class="skill_item">
-              <p class="skill_img"><img src="img/index/skill/html_css.png" alt=""></p>
-              <div class="skill_body">
-                <h3 class="skill_name">HTML5/CSS3</h3><div class="wrap_ster_skill"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
-                <p class="skill_text">
-                  レスポンシブ対応を含め、基本的なコーディングは問題ありません。</p>
-              </div>
-            </div>
-            <div class="skill_item">
               <p class="skill_img"><img src="img/index/skill/java.png" alt=""></p>
               <div class="skill_body">
-                <h3 class="skill_name">JavaScript・jQuery</h3><div class="wrap_ster_skill"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+                <h3 class="skill_name">JavaScript</h3><div class="wrap_ster_skill"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
                 <p class="skill_text">
-                  複雑なコードを最初から書くことはできませんが、ライブラリやプラグインを使用してスライドショーなどの簡単な動きをつけることができます。
+                  タブ切り替えや、アコーディオン、スライドショーなどの動的なインターフェースをつけることができます。
                 </p>
+              </div>
+            </div>
+
+            <div class="skill_item">
+              <p class="skill_img"><img src="https://cdn.simpleicons.org/php/777BB4" alt=""></p>
+              <div class="skill_body">
+                <h3 class="skill_name">PHP</h3><div class="wrap_ster_skill"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+                <p class="skill_text">
+                  繰り返し処理、条件分岐などができます。WordPressのテーマ開発も可能です。
+                </p>
+              </div>
+            </div>
+
+            <div class="skill_item">
+              <p class="skill_img"><img src="img/index/skill/html_css.png" alt=""></p>
+              <div class="skill_body">
+                <h3 class="skill_name">HTML5/CSS3</h3><div class="wrap_ster_skill"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p class="skill_text">
+                  レスポンシブ対応を含め、基本的なコーディングは問題ありません。SCSS（Sass）やEJSでのコーディングも可能です。</p>
               </div>
             </div>
             <div class="skill_item">
               <p class="skill_img"><img src="img/index/skill/Illustrator.png" alt=""></p>
               <div class="skill_body">
-                <h3 class="skill_name">Illustrator</h3><div class="wrap_ster_skill"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
+                <h3 class="skill_name">Illustrator</h3><div class="wrap_ster_skill"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
                 <p class="skill_text">
-                  チラシ、ポスター、バナー等の印刷物のデザインを制作できます。
+                  アイコンなどの作成ができます。
                 </p>
               </div>
             </div>
             <div class="skill_item">
               <p class="skill_img"><img src="img/index/skill/photoshop.png" alt=""></p>
               <div class="skill_body">
-                <h3 class="skill_name">Photoshop</h3><div class="wrap_ster_skill"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+                <h3 class="skill_name">Photoshop</h3><div class="wrap_ster_skill"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
                 <p class="skill_text">
-                  写真の色調補正、修正、合成ができます。
+                  写真の色調補正、バナーやwebページ等のデザインを制作できます。
                 </p>
               </div>
             </div>
@@ -178,6 +191,24 @@
         </div>
       </section>
       <!-- /skill -->
+
+      <!-- About -->
+      <section class="About section" id="about">
+        <div class="inner">
+          <h2 class="ttl_sec"><span class="en">About</span><span class="ja">自己紹介</span></h2>
+          <div class="warp_text">
+            <p class="text">
+              はじめまして。ご覧いただきありがとうございます。<br>
+              <br>
+              もともとはWebデザイナーを目指して学び始めましたが、制作を進める中でコーディングの楽しさや、動きや仕組みを形にしていく面白さに惹かれ、現在はフロントエンドエンジニアとしてのキャリアを歩んでいます。
+              実務ではコーディングを中心に担当しつつ、バナー制作やWebページのデザインにも関わる機会があり、デザインと実装の両方を理解した上での開発を意識して取り組んできました。<br>
+              <br>
+              今後はフロントエンドエンジニアとして、より専門的な知識や技術を深めながらも、これまでに培ったデザインの視点も活かし、見た目と使いやすさのバランスがとれたWebサイト制作を目指していきたいと考えています。
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- /skill -->      
 
       <!-- background -->
       <div class="bg"></div>

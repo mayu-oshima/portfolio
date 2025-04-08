@@ -53,6 +53,7 @@ img{
   text-align: center;
   border-radius: 10px;
   margin-left: 10px;
+  cursor: pointer;
 }
 .fontchange li.active{
   background: #d1ebdb;
