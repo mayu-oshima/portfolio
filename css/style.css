@@ -332,6 +332,9 @@ p{
 .works_item {
   width: 23.5%;
   margin-right: 2%;
+  &:nth-child(n+5) {
+	margin-top: 40px;
+  }
 }
 .works_item:nth-of-type(4n) {
   margin-right: 0;
@@ -508,9 +511,10 @@ p{
 .ttl_item_about_work{
 	font-size: 1.8rem;
 	border-bottom: 3px solid #deabaf;
-	width: 160px;
 	padding-bottom: 2px;
 	font-weight: 700;
+	margin-bottom: 30px;
+	padding-bottom: 10px;
 }
 .content_item_about_work {
   margin-top: 20px;

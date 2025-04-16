@@ -33,52 +33,70 @@
       <div class="work inner">
         <div class="work_top">
           <h2 class="work_title">Webサイト</h2>
-          <h3 class="work_sub_title">総合病院「小林病院」</h3>
+          <h3 class="work_sub_title">closetta</h3>
           <p>
-            仮想の総合病院「小林病院」のWebサイトです。
+           架空の洋服通販サイトです。
           </p>
           <div class="btn_work">
-            <a href="kobayasi/index.html" target="_blank" rel="noopener">Webサイトへ</a>
+            <a href="https://closetta.vercel.app/" target="_blank" rel="noopener">Webサイトへ</a>
+            <a class="code" href="https://github.com/mayu-oshima/closetta/" target="_blank" rel="noopener">ソースコードはこちら</a>
           </div>
         </div>
 
         <div class="wrap_about_work">
           <div class="img_about_work">
-            <img src="images/kobayasi.jpg" alt="">
+            <img src="images/closetta.png" alt="">
           </div>
           <div class="about_work">
             <div class="item_about_work">
-              <h4 class="ttl_item_about_work">ターゲット</h4>
-              <p>幅広い年齢層の方々</p>
-            </div>
-            <div class="item_about_work">
-              <h4 class="ttl_item_about_work">目的</h4>
-              <p>情報を伝えるとともに病院への信頼感を与える</p>
-            </div>
-            <div class="item_about_work">
-              <h4 class="ttl_item_about_work">要望</h4>
-              <p>どんな人でも使いやすく分かりやすいサイトで信頼と安心感を与えるようなデザインにしたい。</p>
-            </div>
-            <div class="item_about_work">
               <h4 class="ttl_item_about_work">制作ポイント</h4>
-              <p>
-                視力の弱い人や高齢者にも配慮し、JavaScriptを使って文字サイズを動的に変更できるボタンを実装しました。CSSのrem単位をベースに設計することで、全体のレイアウト崩れを防ぎつつ、ユーザーが視認性を調整できるようにしました。
-              </p>
+              <div>
+                <p>React + TypeScriptでファッション通販サイトを制作しました。以下の点を特に工夫しています。</p>
+                <div class="content_item_about_work">
+                  <h3 class="ttl_content_item_about_work">商品ページのルーティング設計</h3>
+                  <p>
+                    React Router を用いて、商品一覧・詳細・カート・注文完了ページへの遷移を実装。<br>
+                    URLパラメータを活用して、商品IDから動的に詳細情報を表示できる構成にしています。
+                  </p>
+                </div>
+                <div class="content_item_about_work">
+                  <h3 class="ttl_content_item_about_work">カート機能のグローバル管理</h3>
+                  <p>
+                    React Context を使ってカートの状態（商品情報や数量など）を全体で共有。<br>
+                    追加・削除・リセットなどのロジックをContext内にまとめて、各ページから操作できるようにしました。
+                  </p>
+                </div>
+                <div class="content_item_about_work">
+                  <h3 class="ttl_content_item_about_work">フォームと注文完了ページの導線</h3>
+                  <p>
+                    氏名・住所などの入力フォームを作成し、送信後は「注文ありがとうございます」ページへ遷移。<br>
+                    注文完了時にはカートの中身を自動でリセットし、UXにも配慮しています。
+                  </p>
+                </div>
+                <div class="content_item_about_work">
+                  <h3 class="ttl_content_item_about_work">styled-componentsによるUI設計</h3>
+                  <p>
+                    styled-componentsで各パーツをコンポーネント単位に分離。<br>
+                    配色やタイポグラフィ、余白などを整え、ECサイトらしい清潔感ある見た目に仕上げました。
+                  </p>
+                </div>
+              </div>
             </div>
             <div class="item_about_work">
               <h4 class="ttl_item_about_work">担当範囲</h4>
               <p>コーディング, デザイン</p>
             </div>
             <div class="item_about_work">
-              <h4 class="ttl_item_about_work">使用技術・ソフト</h4>
-              <p>HTML，CSS，JavaScript，Illustrator，Photoshop</p>
+              <h4 class="ttl_item_about_work">使用言語・フレームワーク等</h4>
+              <p>React, JavaScript / TypeScript, HTML, CSS, Photoshop</p>
             </div>
             <div class="item_about_work">
               <h4 class="ttl_item_about_work">対応機種</h4>
-              <p>PC，SP，iPad</p>
+              <p>PC</p>
             </div>
             <div class="btn_work">
-              <a href="kobayasi/index.html" target="_blank" rel="noopener">Webサイトへ</a>
+              <a href="https://closetta.vercel.app/" target="_blank" rel="noopener">Webサイトへ</a>
+              <a class="code" href="https://github.com/mayu-oshima/closetta/" target="_blank" rel="noopener">ソースコードはこちら</a>
             </div>
           </div>
         </div>
