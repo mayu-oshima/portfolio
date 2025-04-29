@@ -203,7 +203,6 @@
   }
   .ttl_item_about_work{
   	font-size: 1.6rem;
-  	width: 145px;
   }
   .content_item_about_work {
     margin-top: 14px;
@@ -275,6 +274,28 @@
   .kisetu_mangetudo .item{
   	width: 100%;
     margin-top: 30px;
+  }
+
+  /* omuraisu */
+  .omraisu_wp {
+    margin-top: 50px;
+    .item {
+      & + & {
+        margin-top: 50px;
+      }
+      .box {
+        display: block;
+        .box_item {
+          width: 100%;
+          & + & {
+            margin-top: 20px;
+          }  
+          img + img {
+            margin-top: 20px
+          }
+        }
+      }
+    }
   }
 
 }

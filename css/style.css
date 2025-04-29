@@ -616,3 +616,23 @@ p{
 .kisetu_mangetudo .item{
 	width: 32%;
 }
+
+/* omuraisu */
+.omraisu_wp {
+	margin-top: 70px;
+	.item {
+		& + & {
+			margin-top: 70px;
+		}
+		.box {
+			display: flex;
+			justify-content: space-between;
+			.box_item {
+				width: 49%;
+				img + img {
+					margin-top: 40px
+				}
+			}
+		}
+	}
+}
